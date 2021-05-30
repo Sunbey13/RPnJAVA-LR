@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #9fb8c7;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AppsInAreaController">
+    <children>
+        <AnchorPane layoutY="50.0" prefHeight="349.0" prefWidth="700.0" style="-fx-background-color: f7f7f7;">
+            <children>
+                <Label layoutX="170.0" layoutY="15.0" text="Устройства в заданном диапазоне" textFill="#9fb8c7">
+                    <font>
+                        <Font name="Tahoma Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Button fx:id="btn_back_to_menu" layoutX="555.0" layoutY="302.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #9fb8c7;" text="Меню" textFill="#f7f7f7">
+                    <font>
+                        <Font name="Arial" size="19.0" />
+                    </font>
+                </Button>
+                <TableView fx:id="power_table" layoutX="178.0" layoutY="49.0" prefHeight="250.0" prefWidth="343.0">
+                    <columns>
+                        <TableColumn fx:id="name_column" prefWidth="144.79999351501465" text="Название прибора" />
+                        <TableColumn fx:id="power_column" prefWidth="193.59999389648436" text="Мощность" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <Label layoutX="13.0" layoutY="10.0" text="Appliance" textFill="#f7f7f7">
+            <font>
+                <Font name="OCR A Extended" size="28.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
